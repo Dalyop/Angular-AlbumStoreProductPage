@@ -7,7 +7,8 @@ export class ProductService {
     id: Number;
   }
 
-  constructor() { }
-  private _http: Http;
-  _albumUrl: '../assets/album.json';
+  constructor() {
+    private_http: Http;
+    _albumUrl: '../assets/album.json';
+  }
 }
