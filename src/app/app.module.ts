@@ -12,14 +12,11 @@ import { ProductService } from './product.service'
 import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
 import { ProductListComponent } from './product-list/product-list.component';
 
-const appRoutes: Routes[
-  {
-    products: ProductListComponent;
-  }
-  {
-    product/:id ProductPageComponent;
-  }
-];
+const appRoutes: Routes = [
+  { path: 'products', component: ProductListComponent },
+  { path: 'product/:id', component: ProductPageComponent },
+  { path: '', redirectTo: 'products', pathMatch: 'full' }
+]
 
 @NgModule({
   declarations: [
